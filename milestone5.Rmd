@@ -1,0 +1,46 @@
+---
+title: "Milestone 5"
+author: "Sophia Freuden"
+date: "10/18/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Age, Turnout, and the Sunshine State:  
+#### Counter Factual Electoral Results by Adjusting Turnout Among Difference Age Groups in Florida  
+
+### About
+
+I am interested in the relationship between age, voter turnout, and counterfactual election results in the State of Florida. Florida is a swing state and oftentimes a predictor of whether the Democratic or Republic Party wins the presidency during election years. As a result, Florida receives a lot of scrutiny about how much--or little--voters turn out to vote during election years. Florida is also demographically interesting. As a coastal state, it contains a diverse population in terms of race, but also a significant population of retirees. These two demographics, age and race, likely inform how elections play out in the state. My goal with this project is to see to what extent that is true. I choose to focus solely on age in the Florida, but my long term goal is to create a framework that could easily be adjusted to look at age and/or race.
+
+#### Project Schematics  
+
+I intend to create an interactive map of Florida that is broken up by county. Within each county, I want to create a sliding scale that can adjust voter turnout among age groups--likely 18-35, 36 - 64, and 65+, though I might adjust these age groups in the future. Hypothetically, a user interacting with this map could make slight or grand adjustments in voter turnout among different age groups to see how red or blue that makes the state in a hypothetical presidential election.
+
+
+#### Data Sources  
+
+**Source 1**: 2000 annd 2010 population by county in Florida, as provided by the State of Florida's Office of Economic and Demographic Research available <a href="http://edr.state.fl.us/Content/population-demographics/data/index-censusdata.cfm">here</a>.
+
+**Source 2**: 2018 estimated population by county in Florida, as provided by the State of Florida's Office of Economic and Demographic Research available <a href="http://edr.state.fl.us/Content/population-demographics/data/index-floridaproducts.cfm">here</a>.
+
+**Source 3**: 2019 estimated population by county and divded by age and sex in Florida, as provided by the University of Florida's Bureau of Business and Economic Research available <a href="https://www.bebr.ufl.edu/population">here</a>.
+
+I plan on using Source 1, 2, and 3 for creating a model that will predict the population of Florida counties in 2020. The University of Florida already has predictions for this, but I would like to make my own model and display it alongside my core map model, if I can. Perhaps I can add some statistical component to this as well--such as a distribution of population changes between 2019 and 2020.
+
+**Source 4**: Poll data from surveys on political attitudes ahead of the 2016 and 2018 national elections, as provided by Harvard University's Cooperative Congressional Election Study available <a href="https://cces.gov.harvard.edu/">here</a>.
+
+This data will help provide me with data that matches age groups with political attitudes.
+
+**Source 5**: Voter registration and history data from the State of Florida, as available <a href="https://dos.myflorida.com/elections/data-statistics/voter-registration-statistics/voter-registration-monthly-reports/">here</a>.
+
+This data is an additional source of data to see which age groups tend to vote for which party.
+
+I ultimately might have a lot of redundant data here that I don't end up using, but casting a wide net initially is always a good approach.
+
+#### About me  
+
+I am a first-year graduate student in Harvard University's master's program for Regional Studies: Russia, Eastern Europe, and Central Asia. I have an interest in election security, specifically how manipulation of voter attitudes and behaviors in key states can alter electoral outcomes.
